@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="51dp"
+    android:orientation="vertical">
+
+    <!-- Date - Brand - Shop - Remark -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/filter_tv"
+            style="@style/filter_tv_style"
+            android:text="日期" />
+
+        <include layout="@layout/divider_vertical" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/filter_spn0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <include layout="@layout/divider_vertical" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/filter_spn1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <include layout="@layout/divider_vertical" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/filter_spn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divider_horizontal" />
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:clipToPadding="true">
+
+    <LinearLayout
+        android:id="@+id/pattern_item_ll0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/pattern_item_tv_style"
+            android:text="颜色" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divider_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/pattern_item_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/pattern_item_tv_style"
+            android:text="尺寸" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divider_horizontal" />
+
+</LinearLayout>

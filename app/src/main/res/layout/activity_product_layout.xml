@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/product_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".product.Product_Act">
+
+    <LinearLayout
+        android:id="@+id/product_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/product_imgbtn0"
+            style="@style/product_bar_imgbtn_style"
+            android:contentDescription="@string/image_btn_content_product_unlock_icon"
+            android:src="@drawable/ic_public_unlock_dark" />
+
+        <ImageButton
+            android:id="@+id/product_imgbtn1"
+            style="@style/product_bar_imgbtn_style"
+            android:contentDescription="@string/image_btn_content_product_favourite_icon"
+            android:src="@drawable/ic_public_favorite_dark" />
+
+        <ImageButton
+            android:id="@+id/product_imgbtn2"
+            style="@style/product_bar_imgbtn_style"
+            android:contentDescription="@string/image_btn_content_product_cart_and_store_icon"
+            android:src="@drawable/ic_public_shopcart_dark" />
+
+        <Button
+            android:id="@+id/product_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@drawable/product_bar_btn"
+            android:text="@string/product_add_cart_btn"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/product_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_above="@id/product_ll"
+        android:gravity="center"
+        android:text="@string/product_check_other_shop_tv"
+        android:textColor="@color/colorAssist" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/product_tv1"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_general" />
+
+        <TextView
+            android:id="@+id/product_tv0"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="@dimen/item_divider"
+            android:background="@color/colorAssist"
+            android:gravity="center"
+            android:text="@string/product_no_stock_tv"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/product_sr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/product_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/item_divider"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/divider_horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="true"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ListView
+                            android:id="@+id/product_lv0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:divider="@color/divider_color"
+                            android:dividerHeight="1px"
+                            android:scrollbars="none" />
+
+                        <include layout="@layout/divider_vertical" />
+
+                        <ListView
+                            android:id="@+id/product_lv1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:divider="@color/divider_color"
+                            android:dividerHeight="1px"
+                            android:scrollbars="none" />
+                    </LinearLayout>
+
+                    <include layout="@layout/divider_horizontal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

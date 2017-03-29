@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/net_down_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLayout"
+    android:clickable="true">
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/net_down_imgbtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/net_down_imgbtn"
+        android:contentDescription="@string/image_btn_content_public_net_down_icon"
+        android:src="@drawable/ic_public_refresh" />
+
+    <TextView
+        android:id="@+id/net_down_tv"
+        android:layout_width="wrap_content"
+        android:text="点击刷新"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/text_middle_size"
+        android:layout_marginTop="@dimen/item_opf_divider"
+        android:layout_below="@id/net_down_imgbtn"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:id="@+id/net_down_pb"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_centerInParent="true"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

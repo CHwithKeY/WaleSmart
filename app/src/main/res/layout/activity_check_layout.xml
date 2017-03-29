@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_check_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.waletech.walesmart.user.managerInfo.Check_Act">
+
+    <include layout="@layout/toolbar_general" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/check_record_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/recycler_shoe_record_item" />
+
+</LinearLayout>

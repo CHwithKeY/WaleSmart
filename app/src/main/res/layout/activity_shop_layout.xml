@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_general" />
+
+        <TextView
+            android:id="@+id/shop_tv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/colorAssist"
+            android:gravity="center"
+            android:textColor="@android:color/white" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/shop_tab"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            app:tabIndicatorColor="@color/colorMain" />
+
+        <!--<android.support.v4.widget.SwipeRefreshLayout-->
+            <!--android:id="@+id/shop_sr"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+        <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/shop_vp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/shop_imgbtn0"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_gravity="center_horizontal|bottom"-->
+        <!--android:layout_margin="@dimen/item_divider"-->
+        <!--android:background="@drawable/shop_imgbtn"-->
+        <!--android:contentDescription="@string/image_btn_content_shop_unlock_icon"-->
+        <!--android:src="@drawable/ic_public_unlock" />-->
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/shop_imgbtn1"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_gravity="start|bottom"-->
+        <!--android:layout_margin="@dimen/item_divider"-->
+        <!--android:background="@drawable/shop_imgbtn"-->
+        <!--android:contentDescription="@string/image_btn_content_shop_to_left_icon"-->
+        <!--android:src="@drawable/ic_public_arrow_left" />-->
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/shop_imgbtn2"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_gravity="end|bottom"-->
+        <!--android:layout_margin="@dimen/item_divider"-->
+        <!--android:background="@drawable/shop_imgbtn"-->
+        <!--android:contentDescription="@string/image_btn_content_shop_to_right_icon"-->
+        <!--android:src="@drawable/ic_public_arrow_right" />-->
+
+</FrameLayout>

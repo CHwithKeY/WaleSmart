@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/exp_sr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/exp_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:layout_margin="@dimen/item_divider"-->
+            <!--android:background="@color/colorBackground" />-->
+
+            <com.baidu.mapapi.map.MapView
+                android:id="@+id/exp_mv"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="@dimen/item_divider" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/exp_btn"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="@dimen/item_divider"
+                android:layout_marginLeft="@dimen/item_divider"
+                android:layout_marginRight="@dimen/item_divider"
+                android:background="@drawable/exp_btn"
+                android:text="@string/exp_try_other_stores_btn"
+                android:textColor="@android:color/white" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/exp_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorLayout"
+                tools:listitem="@layout/recycler_shop_item" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <include
+        android:id="@+id/exp_net_down_view"
+        layout="@layout/fragment_public_net_down_layout"
+        android:clickable="true"
+        android:visibility="gone" />
+
+</FrameLayout>

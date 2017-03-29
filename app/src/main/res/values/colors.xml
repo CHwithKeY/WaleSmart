@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Color Plan -->
+    <!-- Base -->
+    <color name="colorBackground">#e1ddd2</color>
+    <color name="colorBackgroundDark">#cecac1</color>
+
+    <color name="colorAssist">#748ac2</color>
+    <color name="colorAssistLight">#8e9dc2</color>
+
+    <color name="colorMain">#ef8863</color>
+    <color name="colorMainLight">#ec9272</color>
+
+    <color name="colorSpecial">#58bead</color>
+    <color name="colorSpecialDark">#4aa394</color>
+    <color name="colorSpecialConverse">#f8cc6c</color>
+    <color name="colorSpecialConverseDark">#e9c066</color>
+
+    <color name="colorLayout">#f2f2f2</color>
+
+    <color name="divider_color">#e6e2e2</color>
+
+    <!-- Color Name -->
+    <color name="colorGrayTrans">#c8515151</color>
+
+</resources>

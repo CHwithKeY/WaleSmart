@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/item_divider"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_opf_divider" />
+
+    <include layout="@layout/divider_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_public_none_image" />
+
+        <include layout="@layout/divider_vertical" />
+
+        <ListView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <include layout="@layout/divider_vertical" />
+
+        <ListView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divider_horizontal" />
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/item_divider"-->
+    <!--android:layout_marginRight="@dimen/item_divider"-->
+    <!--android:baselineAligned="true"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/rv_manager_record_usn_tv"-->
+    <!--android:layout_width="200dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:background="@color/colorAssist"-->
+    <!--android:gravity="center"-->
+    <!--android:textColor="@android:color/white" />-->
+
+    <!--<include-->
+    <!--layout="@layout/base_shop_bar_item"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp" />-->
+
+    <!--<include-->
+    <!--layout="@layout/base_date_bar_item"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--style="@style/base_cardview_style"-->
+    <!--app:cardUseCompatPadding="true">-->
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<include layout="@layout/base_shoe_general_item" />-->
+
+    <!--<include layout="@layout/base_shoe_missed_item" />-->
+    <!--</FrameLayout>-->
+
+    <!--</android.support.v7.widget.CardView>-->
+
+    <!--<include layout="@layout/base_load_more_item" />-->
+
+</LinearLayout>

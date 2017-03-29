@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLayout"
+    android:orientation="vertical"
+    tools:context=".user.User_Act">
+
+    <include layout="@layout/toolbar_general" />
+
+    <include layout="@layout/base_user_head_item" />
+
+    <TextView
+        android:id="@+id/user_tv0"
+        style="@style/base_list_item_tv_style"
+        android:layout_marginTop="@dimen/item_double_divider"
+        android:drawableLeft="@drawable/ic_user_unlock_record"
+        android:drawableStart="@drawable/ic_user_unlock_record"
+        android:text="@string/user_bar_record" />
+
+    <include layout="@layout/divider_horizontal" />
+
+    <TextView
+        android:id="@+id/user_tv1"
+        style="@style/base_list_item_tv_style"
+        android:drawableLeft="@drawable/ic_user_shopcart"
+        android:drawableStart="@drawable/ic_user_shopcart"
+        android:text="@string/user_bar_cart" />
+
+    <TextView
+        android:id="@+id/user_tv2"
+        style="@style/base_list_item_tv_style"
+        android:layout_marginTop="@dimen/item_double_divider"
+        android:drawableLeft="@drawable/ic_user_modify_psd"
+        android:drawableStart="@drawable/ic_user_modify_psd"
+        android:text="@string/user_bar_coupon" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/user_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_double_divider"
+        android:background="@color/colorLayout"
+        android:scrollbars="none"
+        tools:listitem="@layout/recycler_grid_item" />
+
+</LinearLayout>

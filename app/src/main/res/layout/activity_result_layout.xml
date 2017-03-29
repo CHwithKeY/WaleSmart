@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".searchResult.Result_Act">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/public_search_item" />
+
+            <include layout="@layout/divider_horizontal" />
+
+            <android.support.v4.widget.DrawerLayout
+                android:id="@+id/result_dl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/result_tv0"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/result_tv"
+                            android:gravity="center"
+                            android:text="@string/result_filter_tv"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <include layout="@layout/divider_horizontal" />
+
+                        <android.support.v4.widget.SwipeRefreshLayout
+                            android:id="@+id/result_sr"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/result_rv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorLayout"
+                                tools:listitem="@layout/recycler_shoe_general_item" />
+
+                        </android.support.v4.widget.SwipeRefreshLayout>
+
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/result_imgbtn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_margin="@dimen/item_double_divider"
+                        android:background="@drawable/result_top_imgbtn"
+                        android:contentDescription="@string/image_btn_content_back_to_top_icon"
+                        android:src="@drawable/ic_public_back_to_top" />
+
+                </FrameLayout>
+
+                <android.support.design.widget.NavigationView
+                    android:id="@+id/result_nav"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:background="@color/colorBackground">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/result_tv1"
+                            style="@style/result_nav_tv_style"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/result_confirm_tv"
+                            android:text="@string/base_dialog_btn_confirm" />
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/result_tv2"-->
+                        <!--style="@style/result_nav_tv_style"-->
+                        <!--android:layout_above="@id/result_tv1"-->
+                        <!--android:layout_marginBottom="@dimen/item_half_divider"-->
+                        <!--android:background="@drawable/result_clear_tv"-->
+                        <!--android:text="清除条件" />-->
+
+                        <LinearLayout
+                            android:id="@+id/result_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_above="@id/result_tv1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@color/colorSpecial"
+                                android:gravity="center"
+                                android:text="@string/result_filter_brand_tv"
+                                android:textColor="@android:color/white" />
+
+                            <LinearLayout
+                                android:id="@+id/result_brand_ll"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="@dimen/item_divider">
+
+                                <Button
+                                    android:id="@+id/result_brand_standard_btn"
+                                    android:layout_width="70dp"
+                                    android:layout_height="30dp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@color/colorSpecial"
+                                android:gravity="center"
+                                android:text="@string/result_filter_area_tv"
+                                android:textColor="@android:color/white" />
+
+                            <include layout="@layout/public_location_spinner_item" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@color/colorSpecial"
+                                android:gravity="center"
+                                android:text="@string/result_filter_category_tv"
+                                android:textColor="@android:color/white" />
+
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/result_male_rb"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/shoe_gender_male"
+                                    android:textSize="@dimen/text_mini_size" />
+
+                                <RadioButton
+                                    android:id="@+id/result_female_rb"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/shoe_gender_female"
+                                    android:textSize="@dimen/text_mini_size" />
+
+                                <RadioButton
+                                    android:id="@+id/result_general_rb"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/shoe_gender_general"
+                                    android:textSize="@dimen/text_mini_size" />
+
+                                <RadioButton
+                                    android:id="@+id/result_all_rb"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/base_item_all"
+                                    android:textSize="@dimen/text_mini_size" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </android.support.design.widget.NavigationView>
+
+            </android.support.v4.widget.DrawerLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>
+

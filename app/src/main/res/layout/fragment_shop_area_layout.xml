@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/area_hsv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <FrameLayout
+        android:id="@+id/area_fl"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:padding="@dimen/item_opf_divider">
+
+        <LinearLayout
+            android:id="@+id/area_standard_item_ll"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:orientation="vertical"
+            android:visibility="invisible" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/area_rv"
+            android:layout_width="450dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:scrollbars="none"
+            tools:listitem="@layout/recycler_shoe_area_item" />
+    </FrameLayout>
+
+</HorizontalScrollView>

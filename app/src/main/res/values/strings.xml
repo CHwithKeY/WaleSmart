@@ -1,0 +1,333 @@
+<resources>
+    <string name="app_name">SmartWale</string>
+
+    <!-- ImageView Content Description -->
+    <string name="image_content_tablayout" translatable="false">代替主页面TabLayout的Icon</string>
+    <string name="image_content_search_item_icon" translatable="false">search_item 界面的搜索栏旁边的放大镜的Icon</string>
+    <string name="image_content_main_user_icon" translatable="false">activity_main 界面的搜索栏旁边的用户的Icon</string>
+    <string name="image_content_main_unlock_icon" translatable="false">activity_main 界面的开锁按钮的Icon</string>
+    <string name="image_content_gridview" translatable="false">九宫格RecyclerView的Icon</string>
+    <string name="image_content_image_item" translatable="false">只包含图片的RecyclerView的ImageView(用于商标)</string>
+    <string name="image_content_shoe_image" translatable="false">所有的关于RecyclerView的鞋子的图片</string>
+    <string name="image_content_shoe_gender_image" translatable="false">关于RecyclerView的鞋子的男女款的图片</string>
+
+    <!-- recycler_home_item -->
+    <string name="image_content_template_advertisements_image" translatable="false">所有的Home的界面，关于广告的鞋子的图片</string>
+
+    <!-- recycler_shoe_cart_item -->
+    <string name="image_content_cart_pattern_icon" translatable="false">购物车的 recycler_shoe_cart_item 的“更多款式”的Icon</string>
+    <string name="image_content_cart_count_add_icon" translatable="false">购物车的 recycler_shoe_cart_item 的数量增加的Icon</string>
+    <string name="image_content_cart_count_minus_icon" translatable="false">购物车的 recycler_shoe_cart_item 的数量减少的Icon</string>
+
+    <!-- activity_user_head_item -->
+    <string name="image_content_user_head_item_avatar_image" translatable="false">用户信息界面的用户头像Image</string>
+    <string name="image_content_user_head_item_edit_icon" translatable="false">用户信息界面的编辑用户头像的编辑按钮Icon</string>
+
+    <!-- public_pattern_page -->
+    <string name="image_content_pattern_shoe_image" translatable="false">更改或添加购物车的时候 fragment 的鞋子的图片</string>
+    <string name="image_btn_content_pattern_close_window" translatable="false">关闭 fragment 的关闭的Icon</string>
+
+    <string name="image_btn_content_search_icon" translatable="false">搜索界面的搜索按钮的Icon</string>
+    <string name="image_btn_content_back_to_top_icon" translatable="false">结果集界面的回到顶部的Icon</string>
+    <string name="image_btn_content_product_unlock_icon" translatable="false">activity_product_layout 界面的底部栏的开锁的Icon</string>
+    <string name="image_btn_content_product_favourite_icon" translatable="false">activity_product_layout 界面的底部栏的收藏的Icon</string>
+    <string name="image_btn_content_product_cart_and_store_icon" translatable="false">activity_product_layout 界面的底部栏的购物车或者是进入店铺的Icon</string>
+
+    <string name="image_btn_content_shop_unlock_icon" translatable="false">activity_shop_layout 界面的底部栏的开锁的Icon</string>
+    <string name="image_btn_content_shop_to_left_icon" translatable="false">activity_shop_layout 界面的底部栏的向左导航的Icon</string>
+    <string name="image_btn_content_shop_to_right_icon" translatable="false">activity_shop_layout 界面的底部栏的向右导航的Icon</string>
+    <string name="image_content_shop_shoe_image" translatable="false">activity_shop_layout 界面的显示鞋子的 Image</string>
+
+    <string name="image_btn_content_public_net_down_icon" translatable="false">断网的时候的Icon</string>
+
+    <!-- Base -->
+    <string name="base_toast_net_down">网络不可用，请检查网络</string>
+    <string name="base_toast_net_worse">网络连接不稳定，请稍后再试</string>
+    <string name="base_toast_login_first">请先登录</string>
+
+    <string name="base_search_progress_title">查询</string>
+    <string name="base_search_progress_msg">正在查询，请稍后……</string>
+
+    <string name="base_add_progress_title">添加</string>
+    <string name="base_add_progress_msg">正在添加，请稍后……</string>
+
+    <string name="base_delete_progress_title">删除</string>
+    <string name="base_delete_progress_msg">正在删除，请稍后……</string>
+
+    <string name="base_refresh_progress_title">更新</string>
+    <string name="base_refresh_progress_msg">正在更新数据，请稍后……</string>
+
+    <string name="base_cancel_progress_title">取消</string>
+    <string name="base_cancel_progress_msg">正在取消，请稍后……</string>
+
+    <string name="base_dialog_delete_title">删除</string>
+    <string name="base_dialog_delete_message">是否要删除所选中的产品</string>
+
+    <string name="base_dialog_btn_yes">是</string>
+    <string name="base_dialog_btn_no">否</string>
+
+    <string name="base_dialog_btn_confirm">确定</string>
+    <string name="base_dialog_btn_sure">确定</string>
+    <string name="base_dialog_btn_cancel">取消</string>
+
+    <string name="base_dialog_btn_okay">好的</string>
+
+    <string name="base_item_all">所有</string>
+
+    <string name="base_toast_no_more_item">没有更多的了</string>
+    <string name="base_toast_no_item_been_selected">没有一个项目被选中</string>
+
+    <!-- HttpResult -->
+    <string name="http_login_success">登录成功</string>
+    <string name="http_register_success">注册成功</string>
+    <string name="http_update_password_success">修改密码成功</string>
+    <string name="http_update_nickname_success">修改昵称成功</string>
+
+    <!-- Shoe -->
+    <string name="shoe_in_stock_tv">有库存</string>
+    <string name="shoe_row_tv">行</string>
+    <string name="shoe_column_tv">列</string>
+
+    <string name="shoe_gender_male">男鞋</string>
+    <string name="shoe_gender_female">女鞋</string>
+    <string name="shoe_gender_general">通用</string>
+
+    <string name="shoe_load_more_tv">正在加载中....</string>
+
+    <!-- MainActivity -->
+    <string name="main_toast_exit_confirm">再按一次返回键退出</string>
+
+    <string name="splash_choose_net_dialog_title">网络选择</string>
+    <string name="splash_choose_net_dialog_msg">是否选择专用局域网？\n（普通用户请选择“否”）</string>
+
+    <string name="main_toast_choose_normal_net">已切换至普通网络</string>
+    <string name="main_toast_choose_dedicated_net">已切换至专用网络</string>
+
+    <!-- Login_Act -->
+    <string name="login_toolbar_title">登录</string>
+
+    <string name="login_usn_hint_et">请输入手机号</string>
+    <string name="login_psd_hint_et">请输入密码</string>
+
+    <string name="login_forget_psd_tv">忘记密码</string>
+    <string name="login_register_btn">注册</string>
+    <string name="login_login_btn">登录</string>
+
+    <string name="login_toast_usn_psd_isNull">用户名或密码为空</string>
+    <string name="login_toast_login_success">登录成功</string>
+    <string name="login_toast_login_failed">登录失败</string>
+    <string name="login_toast_login_isWrongUsnOrPsd">用户名或密码错误，请重新输入</string>
+
+    <string name="login_progress_msg">正在登录，请稍后…</string>
+    <string name="login_progress_title">登录</string>
+
+    <!-- Register_Act -->
+    <string name="reg_toolbar_title">注册</string>
+
+    <string name="reg_usn_hint_et">请输入手机号</string>
+    <string name="reg_psd_hint_et">请输入密码</string>
+    <string name="reg_nicn_hint_et">请输入昵称</string>
+    <string name="reg_idc_hint_et">请输入验证码</string>
+
+    <string name="reg_idc_btn">获取验证码</string>
+    <string name="reg_idc_press_btn">重新发送</string>
+
+    <string name="reg_toast_nickname_isNull">昵称为空，请填写</string>
+
+    <string name="reg_register_btn">注\t\t册</string>
+    <string name="reg_toast_register_success">注册成功</string>
+
+    <string name="reg_progress_title">注册</string>
+    <string name="reg_progress_msg">正在注册，请稍后…</string>
+
+    <!-- Experience_Frag -->
+    <string name="exp_try_other_stores_btn">找不到想要的？去其他店里试试</string>
+    <string name="exp_no_store_this_area_tv">该片区尚未入驻体验店</string>
+
+    <!-- Search_Frag -->
+    <string name="search_sv_hint">请输入要搜索的品牌或款式</string>
+
+    <string name="search_progress_title">搜索</string>
+    <string name="search_progress_msg">正在搜索，请稍后…</string>
+
+    <string name="search_toast_no_result">没有找到相关的产品</string>
+
+    <!-- Result_Act -->
+    <string name="result_filter_tv">筛\t\t\t选</string>
+
+    <string name="result_filter_brand_tv">品\t\t\t牌</string>
+    <string name="result_filter_area_tv">地\t\t\t区</string>
+    <string name="result_filter_category_tv"> 类\t\t\t别</string>
+
+    <!-- User_Act -->
+    <string name="user_toolbar_title">个人信息</string>
+
+    <string name="user_head_item_level_tv">初级用户</string>
+
+    <string name="user_bar_record">开锁记录</string>
+    <string name="user_bar_cart">购物车</string>
+    <string name="user_bar_coupon">优惠券</string>
+
+    <string name="user_grid_order">订单</string>
+    <string name="user_grid_favourite">收藏</string>
+    <string name="user_grid_history">足迹</string>
+    <string name="user_grid_wallet">钱包</string>
+    <string name="user_grid_advice">意见</string>
+    <string name="user_grid_authorize">授权</string>
+    <string name="user_grid_logout">退出登录</string>
+
+    <string name="user_grid_logout_dialog_title">退出</string>
+    <string name="user_grid_logout_dialog_msg">是否要退出账户</string>
+
+
+    <string name="user_menu_item_check_manager">进入管理者模式</string>
+    <string name="user_menu_item_check_update">版本更新</string>
+
+    <string name="user_menu_item_switch_language_dialog_title">语言切换</string>
+    <string name="user_menu_item_switch_language_dialog_item_ch">中文</string>
+    <string name="user_menu_item_switch_language_dialog_item_en">英文</string>
+
+    <string name="user_menu_item_switch_net_dialog_title">网络切换</string>
+    <string name="user_menu_item_switch_net_dialog_item_normal">普通网络</string>
+    <string name="user_menu_item_switch_net_dialog_item_dedicated">专用网络</string>
+
+    <!-- Edit_Info_Act -->
+    <string name="edit_info_toolbar_title">修改信息</string>
+
+    <string name="edit_info_update_avatar_tv">更换头像</string>
+    <string name="edit_info_edit_nicn_tv">修改昵称</string>
+    <string name="edit_info_edit_psd_tv">修改密码</string>
+
+    <string name="edit_info_edit_nicn_hint">请输入新的昵称</string>
+    <string name="edit_info_edit_old_psd_hint">请输入旧密码</string>
+    <string name="edit_info_edit_new_psd_hint">请输入新密码</string>
+    <string name="edit_info_edit_new_psd_confirm_hint">请确认新密码</string>
+
+    <string name="edit_info_toast_no_blank">内容不能为空</string>
+    <string name="edit_info_toast_not_duplication_psd">两次输入的密码不相同</string>
+
+    <!-- UnlockAction -->
+    <string name="unlock_progress_title">开锁</string>
+    <string name="unlock_progress_msg">正在开锁，请稍后……</string>
+
+    <!-- LockInfo_Act -->
+    <string name="lockinfo_toolbar_title">开锁信息</string>
+
+    <string name="lockinfo_tab_unlock_using">当前开锁</string>
+    <string name="lockinfo_tab_unlock_record">开锁记录</string>
+
+    <!-- Product_Act -->
+    <string name="product_toolbar_title">产品信息</string>
+    <string name="product_add_cart_btn">加入购物车</string>
+    <string name="product_buy_btn">立即下单</string>
+
+    <string name="product_list_params_brand">品牌</string>
+    <string name="product_list_params_product">款名</string>
+    <string name="product_list_params_color">颜色</string>
+    <string name="product_list_params_size">尺寸</string>
+    <string name="product_list_params_store">所在门店</string>
+
+    <string name="product_check_other_shop_tv">查看其他拥有该展品的商店</string>
+    <string name="product_no_stock_tv">此商品暂无库存，仅可体验！</string>
+
+    <string name="product_item_already_exists">已有该收藏</string>
+
+    <string name="product_toast_find_no_other_shop">没有查找到其他拥有该展品的店铺</string>
+
+    <!-- Pattern -->
+    <string name="pattern_price_tv">价格：0.00</string>
+    <string name="pattern_stock_tv">库存：0件</string>
+    <string name="pattern_toast_size_btn">请先选择颜色</string>
+
+    <!-- Area_Frag -->
+    <string name="area_shoe_status_no_shoes_tv">暂无鞋</string>
+    <string name="area_shoe_status_enjoying_tv">试鞋中</string>
+
+    <!-- Favourite_Act -->
+    <string name="favourite_toolbar_title">收藏夹</string>
+
+    <!-- Cart_Act -->
+    <string name="cart_toolbar_title">购物车</string>
+
+    <string name="cart_menu_item_edit">编辑</string>
+    <string name="cart_menu_item_finish">完成</string>
+
+    <string name="cart_whole_price_tv">合计金额：</string>
+    <string name="cart_make_order_tv">立即下单</string>
+    <string name="cart_rmb_tv">元</string>
+
+    <string name="cart_dialog_order_confirm_title">订单确认</string>
+    <string name="cart_dialog_order_confirm_msg">是否要购买所选中的产品？</string>
+
+    <string name="cart_toast_count_can_not_be_zero">数量不可以为0</string>
+
+    <!-- Order_Act -->
+    <string name="order_toolbar_title">我的订单</string>
+
+    <string name="order_item_order_number">订单号：</string>
+    <string name="order_item_whole_price">总金额：</string>
+
+    <string name="order_item_toolbar_title">订单详细</string>
+    <string name="order_item_item_count">数量</string>
+    <string name="order_item_item_price">金额</string>
+
+    <!-- Comment_Act -->
+    <string name="com_toolbar_title">评\t\t价\t\t</string>
+    <string name="com_exp_title_tv">感谢您的体验，我们会根据您的评价为您推荐更合适您的鞋子！</string>
+
+    <string name="com_exp_width_tv">量脚宽窄度</string>
+    <string name="com_exp_material_tv">材料舒适度</string>
+    <string name="com_exp_sport_tv">行动舒适度</string>
+    <string name="com_exp_advice_tv">评价建议</string>
+    <string name="com_exp_advice_et_hint">如果您还有其他的建议，请在此处填写。</string>
+
+    <string name="comment_progress_msg">正在提交评价，请稍后…</string>
+    <string name="comment_progress_title">提交</string>
+
+    <string name="com_commit_btn">提\t\t交</string>
+    <string name="com_shop_btn">心\t\t动</string>
+
+    <!-- GPush -->
+    <string name="gpush_no_return_notice_ticker">试鞋通知</string>
+    <string name="gpush_no_return_notice_title">试鞋提醒</string>
+
+    <string name="gpush_has_return_notice_ticker">归还通知</string>
+    <string name="gpush_has_return_notice_title">归还成功</string>
+    <string name="gpush_has_return_notice_msg">感谢您的体验！</string>
+
+    <!-- Fragment_Tag -->
+    <string name="fragment_tag_pattern_frag">fragment_tag_pattern_frag</string>
+
+    <!-- Update_Act -->
+    <string name="update_toolbar_title">版本更新</string>
+
+    <string name="update_version_tv">版本号：</string>
+    <string name="update_check_tv">检查更新</string>
+
+    <string name="update_dialog_title">版本更新</string>
+    <string name="update_dialog_msg">检测到新版本，请问是否更新？</string>
+
+    <string name="update_toast_is_Latest_version">当前已经是最新版本</string>
+
+    <string name="update_toast_downloading_latest_version">正在下载更新</string>
+
+    <!-- Authorize_Act -->
+    <string name="auth_toolbar_title">权限管理</string>
+
+    <string name="auth_config_tv">语言权限</string>
+    <string name="auth_camera_tv">相机权限</string>
+    <string name="auth_location_tv">地图权限</string>
+    <string name="auth_read_state_tv">推送权限</string>
+    <string name="auth_storage_tv">更新权限</string>
+    <string name="auth_warm_tips_tv">为了您更好的体验，建议您开启所有权限。</string>
+
+    <string name="auth_toast_permission_camera_authorized">请打开权限，否则无法正常扫码</string>
+    <string name="auth_toast_permission_update_authorized">请打开权限，否则无法下载新版本</string>
+
+    <string name="auth_dialog_title">权限设置</string>
+    <string name="auth_dialog_map_permission_msg">由于您未授予地图权限，因此无法显示地图功能，请点击右上角进入“个人信息”—>“授权”中进行设置</string>
+    <string name="auth_dialog_language_permission_msg">由于您未授予语言权限，因此无法使用切换语言功能，请点击“授权”进行设置</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

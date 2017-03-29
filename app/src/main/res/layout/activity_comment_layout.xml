@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<include-->
+        <!--layout="@layout/toolbar_general"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp" />-->
+
+        <include layout="@layout/toolbar_general" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:fitsSystemWindows="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/com_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/item_divider"
+                    android:layout_marginLeft="@dimen/item_double_divider"
+                    android:layout_marginRight="@dimen/item_double_divider"
+                    android:layout_marginTop="@dimen/item_divider"
+                    android:text="@string/com_exp_title_tv"
+                    android:textColor="@color/colorAssist"
+                    android:textSize="@dimen/text_large_size"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/com_img"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:id="@+id/com_tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/item_divider"
+                        android:layout_marginStart="@dimen/item_divider"
+                        android:gravity="start"
+                        android:textSize="@dimen/text_middle_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/item_double_divider"
+                    android:layout_marginStart="@dimen/item_double_divider"
+                    android:layout_marginTop="@dimen/item_divider"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/com_title_tv_style"
+                        android:text="@string/com_exp_width_tv" />
+
+                    <RatingBar
+                        android:id="@+id/com_rat0"
+                        style="@style/com_rating_bar_style" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/item_double_divider"
+                    android:layout_marginStart="@dimen/item_double_divider"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/com_title_tv_style"
+                        android:text="@string/com_exp_material_tv" />
+
+                    <RatingBar
+                        android:id="@+id/com_rat1"
+                        style="@style/com_rating_bar_style" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/item_double_divider"
+                    android:layout_marginStart="@dimen/item_double_divider"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/com_title_tv_style"
+                        android:text="@string/com_exp_sport_tv" />
+
+                    <RatingBar
+                        android:id="@+id/com_rat2"
+                        style="@style/com_rating_bar_style" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/com_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="@dimen/item_double_divider"
+                    android:background="@drawable/dw_comment_advice_et"
+                    android:gravity="top"
+                    android:hint="@string/com_exp_advice_et_hint"
+                    android:inputType="textMultiLine"
+                    android:maxLength="30"
+                    android:padding="10dp" />
+
+                <android.support.v7.widget.ButtonBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/item_opf_divider"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/com_commit_btn"
+                        style="@style/com_btn_style"
+                        android:layout_marginEnd="@dimen/item_double_divider"
+                        android:layout_marginRight="@dimen/item_double_divider"
+                        android:background="@drawable/dw_comment_commit_btn"
+                        android:text="@string/com_commit_btn" />
+
+                    <Button
+                        android:id="@+id/com_shop_btn"
+                        style="@style/com_btn_style"
+                        android:background="@drawable/dw_comment_shop_btn"
+                        android:text="@string/com_shop_btn" />
+                </android.support.v7.widget.ButtonBarLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/com_tv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorMain"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_xx_large_size"
+        android:visibility="gone" />
+
+</FrameLayout>

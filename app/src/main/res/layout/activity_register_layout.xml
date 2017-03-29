@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLayout"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_general" />
+
+    <LinearLayout
+        android:id="@+id/reg_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8">
+
+            <EditText
+                android:id="@+id/reg_et2"
+                style="@style/reg_et_style"
+                android:layout_centerInParent="true"
+                android:hint="@string/reg_nicn_hint_et"
+                android:inputType="text" />
+
+            <FrameLayout
+                android:id="@+id/reg_fl0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/reg_et2"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp">
+
+                <EditText
+                    android:id="@+id/reg_et1"
+                    style="@style/reg_et_style"
+                    android:hint="@string/reg_psd_hint_et"
+                    android:inputType="textPassword" />
+
+                <TextView
+                    android:id="@+id/reg_tv0"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/ic_public_eye" />
+
+                <TextView
+                    android:id="@+id/reg_tv1"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_public_psd_clear" />
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/reg_et0"
+                style="@style/reg_et_style"
+                android:layout_above="@id/reg_fl0"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal|bottom"
+                android:hint="@string/reg_usn_hint_et"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/reg_et3"
+                style="@style/reg_et_style"
+                android:layout_width="150dp"
+                android:layout_alignLeft="@id/reg_fl0"
+                android:layout_alignStart="@id/reg_fl0"
+                android:layout_below="@id/reg_et2"
+                android:layout_marginTop="20dp"
+                android:hint="@string/reg_idc_hint_et"
+                android:inputType="number"
+                android:maxLength="6" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/reg_et3"
+                android:layout_alignEnd="@+id/reg_fl0"
+                android:layout_alignRight="@+id/reg_fl0"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/reg_btn0"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/reg_idc_press_btn"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/reg_btn1"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/reg_idc_btn"
+                    android:text="@string/reg_idc_btn"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:textSize="12sp" />
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/reg_btn2"
+                android:text="@string/reg_register_btn"
+                style="@style/reg_main_btn_style"
+                android:layout_alignLeft="@id/reg_et3"
+                android:layout_alignStart="@id/reg_et3" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2" />
+
+    </LinearLayout>
+
+</LinearLayout>

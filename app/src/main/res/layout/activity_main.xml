@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_fl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/public_search_item" />
+
+            <TextView
+                android:id="@+id/main_net_tv"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginLeft="@dimen/item_divider"
+                android:layout_marginStart="@dimen/item_divider"
+                android:gravity="center"
+                android:textSize="@dimen/text_x_large_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/main_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="@dimen/item_divider"
+                android:layout_marginRight="@dimen/item_divider"
+                android:contentDescription="@string/image_content_main_user_icon"
+                android:src="@drawable/ic_public_user" />
+        </FrameLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_vp_compat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:background="@drawable/main_unlock_imgbtn_shadow" />
+
+    <ImageButton
+        android:id="@+id/main_imgbtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="@dimen/item_three_time_divider"
+        android:layout_marginEnd="@dimen/item_three_time_divider"
+        android:layout_marginRight="@dimen/item_three_time_divider"
+        android:background="@drawable/main_unlock_imgbtn"
+        android:contentDescription="@string/image_content_main_unlock_icon"
+        android:src="@drawable/ic_public_unlock" />
+
+</FrameLayout>
+

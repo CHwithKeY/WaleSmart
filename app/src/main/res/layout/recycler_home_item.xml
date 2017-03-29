@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLayout"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_rv0"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:clipToPadding="true"
+        android:orientation="horizontal"
+        tools:listitem="@layout/recycler_text_rectangle_item" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorAssist" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/darker_gray" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_rv1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:color/white"
+        tools:listitem="@layout/recycler_imgbtn_square_item" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/darker_gray" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorAssist" />
+
+    <!--<android.support.v4.view.ViewPager-->
+    <!--android:id="@+id/home_vp"-->
+    <!--android:clipChildren="false"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="200dp"-->
+    <!--android:background="@android:color/white" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="@dimen/item_opf_divider">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ads_img"
+            android:contentDescription="@string/image_content_template_advertisements_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ads_img0" />
+    </RelativeLayout>
+
+    <include layout="@layout/base_home_template_a_item" />
+
+    <include layout="@layout/base_home_template_b_item" />
+
+
+</LinearLayout>

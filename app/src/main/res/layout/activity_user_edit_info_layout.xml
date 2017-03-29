@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_general" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_three_time_divider" />
+
+    <include layout="@layout/divider_horizontal" />
+
+    <TextView
+        android:id="@+id/edit_info_nicn_tv"
+        style="@style/base_list_item_tv_style"
+        android:text="@string/edit_info_edit_nicn_tv" />
+
+    <include layout="@layout/divider_horizontal" />
+
+    <TextView
+        android:id="@+id/edit_info_psd_tv"
+        style="@style/base_list_item_tv_style"
+        android:text="@string/edit_info_edit_psd_tv" />
+
+    <include layout="@layout/divider_horizontal" />
+
+</LinearLayout>

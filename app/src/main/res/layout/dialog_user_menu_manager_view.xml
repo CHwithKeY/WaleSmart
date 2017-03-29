@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/user_dialog_menu_manager_psd_et"
+        style="@style/login_et_style"
+        android:layout_margin="@dimen/item_double_divider"
+        android:hint="@string/login_psd_hint_et"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/user_dialog_menu_manager_confrim_btn"
+        style="@style/login_btn_style"
+        android:layout_height="30dp"
+        android:layout_marginBottom="@dimen/item_double_divider"
+        android:background="@drawable/login_reg_btn"
+        android:text="@string/base_dialog_btn_confirm" />
+
+</LinearLayout>

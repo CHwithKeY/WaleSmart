@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/rv_status_view"
+            layout="@layout/base_shoe_status_item"
+            android:layout_width="80dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+        <include
+            layout="@layout/base_shoe_item"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_toStartOf="@id/rv_status_view"
+            android:layout_toLeftOf="@id/rv_status_view" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/divider_horizontal" />
+
+    <TextView
+        android:id="@+id/rv_bottom_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="广东省深圳市南山区X号路鞋宝来X店X区X行X列"
+        android:textSize="12sp" />
+
+</LinearLayout>

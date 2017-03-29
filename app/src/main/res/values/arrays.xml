@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="product_standard">
+        <item>@string/product_list_params_brand</item>
+        <item>@string/product_list_params_product</item>
+        <item>@string/product_list_params_color</item>
+        <item>@string/product_list_params_size</item>
+        <item>@string/product_list_params_store</item>
+    </array>
+
+</resources>

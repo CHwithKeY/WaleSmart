@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_general" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/cart_sr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/cart_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorLayout"
+                tools:listitem="@layout/recycler_shoe_cart_item" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorBackground"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <!--<android.support.v7.widget.AppCompatCheckBox-->
+            <!--android:id="@+id/rv_whole_cb"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/item_opf_divider"-->
+            <!--android:layout_marginStart="@dimen/item_opf_divider"-->
+            <!--android:text="全选" />-->
+
+        <TextView
+            android:id="@+id/rv_whole_price_tv"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:text="@string/cart_whole_price_tv" />
+
+        <TextView
+            android:id="@+id/rv_make_order_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@android:color/holo_red_light"
+            android:gravity="center"
+            android:text="@string/cart_make_order_tv"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/rv_pattern_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/colorGrayTrans">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_gravity="bottom"
+            android:background="@android:color/white">
+
+            <include layout="@layout/base_shoe_item" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/colorBackground"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rv_price_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.7"
+                    android:gravity="center"
+                    android:text="金额：289.45" />
+
+                <TextView
+                    android:id="@+id/rv_confirm_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:background="@android:color/holo_red_light"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".user.authInfo.Authorize_Act">
+
+    <include layout="@layout/toolbar_general" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <include layout="@layout/divider_horizontal" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/base_list_item_tv_style"
+            android:text="@string/auth_config_tv" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/auth_config_sw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_margin="@dimen/item_half_divider" />
+    </FrameLayout>
+
+    <include layout="@layout/divider_horizontal" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/base_list_item_tv_style"
+            android:text="@string/auth_camera_tv" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/auth_camera_sw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_margin="@dimen/item_half_divider" />
+    </FrameLayout>
+
+    <include layout="@layout/divider_horizontal" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/base_list_item_tv_style"
+            android:text="@string/auth_location_tv" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/auth_location_sw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_margin="@dimen/item_half_divider" />
+    </FrameLayout>
+
+    <include layout="@layout/divider_horizontal" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/base_list_item_tv_style"
+            android:text="@string/auth_read_state_tv" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/auth_read_state_sw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_margin="@dimen/item_half_divider" />
+    </FrameLayout>
+
+    <include layout="@layout/divider_horizontal" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/base_list_item_tv_style"
+            android:text="@string/auth_storage_tv" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/auth_storage_sw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_margin="@dimen/item_half_divider" />
+    </FrameLayout>
+
+    <include layout="@layout/divider_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/item_double_divider"
+        android:drawableLeft="@drawable/ic_auth_tips"
+        android:drawableStart="@drawable/ic_auth_tips"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/item_half_divider"
+        android:text="@string/auth_warm_tips_tv"
+        android:textSize="@dimen/text_middle_size" />
+
+</LinearLayout>

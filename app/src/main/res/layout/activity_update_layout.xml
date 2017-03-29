@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".update.Update_Act">
+
+    <include layout="@layout/toolbar_general" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <include layout="@layout/divider_horizontal" />
+
+    <TextView
+        android:id="@+id/update_version_tv"
+        style="@style/base_list_item_tv_style"
+        android:text="@string/update_version_tv" />
+
+    <include layout="@layout/divider_horizontal" />
+
+    <TextView
+        android:id="@+id/update_check_tv"
+        style="@style/base_list_item_tv_style"
+        android:text="@string/update_check_tv" />
+
+    <include layout="@layout/divider_horizontal" />
+
+</LinearLayout>

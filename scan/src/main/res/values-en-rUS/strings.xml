@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SmartWale</string>
+    <string name="scan_tips">Scan the QR Code</string>
+
+</resources>

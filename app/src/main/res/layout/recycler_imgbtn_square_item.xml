@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/rv_imgbtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/base_square_imgbtn"
+        android:contentDescription="@string/image_content_image_item"
+        android:padding="@dimen/item_divider"
+        android:scaleType="centerInside" />
+
+</LinearLayout>

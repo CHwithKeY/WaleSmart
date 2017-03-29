@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv_missed_tv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayTrans"
+    android:drawableLeft="@drawable/ic_shoe_status_missed"
+    android:drawableStart="@drawable/ic_shoe_status_missed"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/item_double_divider"
+    android:paddingRight="@dimen/item_double_divider"
+    android:text="已失效"
+    android:textColor="@android:color/white"
+    android:textSize="@dimen/text_xx_large_size"
+    android:visibility="gone">
+
+    <!--<ImageView-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_gravity="center_vertical|start"-->
+    <!--android:layout_marginLeft="@dimen/item_double_divider"-->
+    <!--android:layout_marginStart="@dimen/item_double_divider" />-->
+
+</TextView>

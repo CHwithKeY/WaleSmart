@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="@android:color/white"
+    android:baselineAligned="true"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3">
+
+        <ImageView
+            android:id="@+id/user_head_img0"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/user_avatar_img"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/image_content_user_head_item_avatar_image" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:gravity="center_vertical|start"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user_head_tv0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/item_opf_divider"
+            android:layout_marginLeft="@dimen/item_opf_divider"
+            android:layout_marginStart="@dimen/item_opf_divider"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/user_head_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_opf_divider"
+            android:layout_marginStart="@dimen/item_opf_divider"
+            android:drawableLeft="@drawable/ic_user_head_item_level"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_user_head_item_level"
+            android:text="@string/user_head_item_level_tv"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2">
+
+        <ImageView
+            android:id="@+id/user_head_img1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/image_content_user_head_item_edit_icon"
+            android:src="@drawable/ic_user_head_item_edit" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Public -->
+    <style name="base_cardview_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/item_divider</item>
+        <item name="android:layout_marginRight">@dimen/item_divider</item>
+    </style>
+
+    <style name="base_list_item_tv_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/dw_base_list_item_tv</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">@dimen/item_double_divider</item>
+        <item name="android:paddingRight">@dimen/item_double_divider</item>
+        <item name="android:drawablePadding">@dimen/item_double_divider</item>
+    </style>
+
+    <!-- Login_Act -->
+    <style name="login_et_style">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/login_et</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textCursorDrawable">@drawable/login_et_cursor</item>
+    </style>
+
+    <style name="login_tv_style">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textColor">@color/colorAssist</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="login_btn_style">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Register_Act -->
+    <style name="reg_et_style">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/login_et</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textCursorDrawable">@drawable/login_et_cursor</item>
+    </style>
+
+    <style name="reg_main_btn_style">
+        <item name="android:layout_marginBottom">40dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/reg_main_btn</item>
+    </style>
+
+    <!-- Filter_Date_Brand_Shop_Remark_Item -->
+    <style name="filter_tv_style">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- Edit_Info_Act -->
+    <style name="edit_info_et_style">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/dw_update_info_et</item>
+        <item name="android:textSize">@dimen/text_normal_size</item>
+        <item name="android:paddingLeft">@dimen/item_divider</item>
+        <item name="android:paddingRight">@dimen/item_divider</item>
+        <item name="android:layout_marginLeft">@dimen/item_divider</item>
+        <item name="android:layout_marginRight">@dimen/item_divider</item>
+        <item name="android:layout_marginTop">@dimen/item_double_divider</item>
+    </style>
+
+    <!-- Product_Act -->
+    <style name="product_bar_imgbtn_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/product_bar_imgbtn</item>
+    </style>
+
+    <!-- Pattern Item -->
+    <style name="pattern_item_tv_style">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Comment_Act -->
+    <style name="com_title_tv_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_middle_size</item>
+        <item name="android:layout_margin">@dimen/item_half_divider</item>
+    </style>
+
+    <style name="com_rating_bar_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:numStars">5</item>
+        <item name="android:stepSize">1.0</item>
+    </style>
+
+    <style name="com_btn_style">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_x_large_size</item>
+    </style>
+
+    <!-- Result_Act -->
+    <style name="result_nav_tv_style">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">@dimen/text_middle_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>
