@@ -11,6 +11,7 @@ import com.waletech.walesmart.sharedinfo.SharedAction;
 public final class HttpSet {
     // 183.62.156.108:427
     // 192.168.137.1:8080
+//    192.168.2.211:8080
     public static final String NORMAL_IP = "119.29.154.234:8080";
     //    public static final String DEDICATED_IP = "192.168.137.1:8080";
     public static final String DEDICATED_IP = "192.168.2.211:8080";
