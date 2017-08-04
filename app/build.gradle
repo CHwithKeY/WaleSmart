@@ -8,8 +8,8 @@ android {
         applicationId "com.waletech.walesmart"
         minSdkVersion 15
         targetSdkVersion 25
-        versionCode 28
-        versionName "2.9"
+        versionCode 29
+        versionName "2.9.2"
         manifestPlaceholders = [
                 GETUI_APP_ID    : "sZTYPEDDN07Y5vWm3A6SK6",
                 GETUI_APP_KEY   : "scR1PtyGkS9dDDfiNxVNx8",
