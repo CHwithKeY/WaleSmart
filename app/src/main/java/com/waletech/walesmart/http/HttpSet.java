@@ -13,7 +13,7 @@ public final class HttpSet {
     // 192.168.137.1:8080
     // 192.168.2.211:8080
     public static final String NORMAL_IP = "119.29.154.234:80";
-    public static final String DEDICATED_IP = "10.10.18.35:8080";
+    public static final String DEDICATED_IP = "192.168.2.211:8080";
 
     private static String BASE_SERVICE = "/ClientBaseService/";
 
