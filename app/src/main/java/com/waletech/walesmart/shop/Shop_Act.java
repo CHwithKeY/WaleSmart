@@ -15,11 +15,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import com.waletech.walesmart.http.HttpTag;
-import com.waletech.walesmart.user.authInfo.PermissionAction;
 import com.waletech.walesmart.R;
 import com.waletech.walesmart.base.Base_Act;
 import com.waletech.walesmart.http.HttpAction;
+import com.waletech.walesmart.http.HttpTag;
 import com.waletech.walesmart.publicAction.UnlockAction;
 import com.waletech.walesmart.publicClass.LineToast;
 import com.waletech.walesmart.publicClass.ViewTadAdapter;
@@ -28,6 +27,8 @@ import com.waletech.walesmart.publicSet.BundleSet;
 import com.waletech.walesmart.publicSet.IntentSet;
 import com.waletech.walesmart.publicSet.PermissionSet;
 import com.waletech.walesmart.shop.area.Area_Frag;
+import com.waletech.walesmart.shop.exp.ExpShop_Act;
+import com.waletech.walesmart.user.authInfo.PermissionAction;
 
 import org.json.JSONException;
 
@@ -73,6 +74,14 @@ public class Shop_Act extends Base_Act implements View.OnClickListener, SwipeRef
     protected void setupToolbar() {
         String shop_name = getIntent().getStringExtra(IntentSet.KEY_SHOP_NAME);
         String shop_location = getIntent().getStringExtra(IntentSet.KEY_SHOP_LOCATION);
+
+        if (shop_name.contains("3店") || shop_name.contains("XieBao_3")) {
+            Intent exp_shop_int = new Intent(this, ExpShop_Act.class);
+            exp_shop_int.putExtra(IntentSet.KEY_SHOP_NAME, shop_name);
+            exp_shop_int.putExtra(IntentSet.KEY_SHOP_LOCATION, shop_location);
+            startActivity(exp_shop_int);
+            finish();
+        }
 
         setTbTitle(shop_name);
         setTbNavigation();
@@ -240,8 +249,8 @@ public class Shop_Act extends Base_Act implements View.OnClickListener, SwipeRef
 
         if (resultCode == RESULT_OK) {
             if (requestCode == UnlockAction.REQUEST_MAIN) {
-                String smark_id = data.getStringExtra("scan_result");
-                unlockAction.unlock(smark_id);
+                String smark_num = data.getStringExtra("scan_result");
+                unlockAction.unlock(smark_num);
             }
         }
     }

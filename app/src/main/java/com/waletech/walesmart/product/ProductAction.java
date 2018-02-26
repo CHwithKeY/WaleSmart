@@ -68,8 +68,8 @@ public class ProductAction extends BaseAction {
         unlockAction.check();
     }
 
-    public void unlock(String smark_id) {
-        unlockAction.unlock(smark_id);
+    public void unlock(String smark_num) {
+        unlockAction.unlock(smark_num);
     }
 
     public void onCheckFavourite(String epc_code) {

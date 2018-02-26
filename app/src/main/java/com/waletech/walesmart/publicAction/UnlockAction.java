@@ -51,15 +51,15 @@ public class UnlockAction extends BaseAction {
         this.context = context;
     }
 
-    public void unlock(String smark_id) {
+    public void unlock(String smark_num) {
         if (!checkNet()) {
             return;
         }
 
         String client_id = PushManager.getInstance().getClientid(context);
 
-        String[] key = {HttpSet.KEY_SMARK_ID, HttpSet.KEY_USERNAME, HttpSet.KEY_NICKNAME, HttpSet.KEY_CLIENT_ID};
-        String[] value = {smark_id, sharedAction.getUsername(), sharedAction.getNickname(), client_id};
+        String[] key = {HttpSet.KEY_SMARK_NUM, HttpSet.KEY_USERNAME, HttpSet.KEY_NICKNAME, HttpSet.KEY_CLIENT_ID};
+        String[] value = {smark_num, sharedAction.getUsername(), sharedAction.getNickname(), client_id};
 
 //        for (int i = 0; i < key.length; i++) {
 //            Log.i("Result","key is : " + i + "-set is : " + key[i]);

@@ -156,7 +156,7 @@ public class User_Act extends Base_Act implements Toolbar.OnMenuItemClickListene
     @Override
     public boolean onMenuItemClick(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.menu_tb_user_item1:
+//            case R.id.menu_tb_user_item1:
 
 //                final View dialog_view = View.inflate(this, R.layout.dialog_user_menu_manager_view, null);
 //                final Dialog dialog = new AlertDialog.Builder(this)
@@ -191,7 +191,7 @@ public class User_Act extends Base_Act implements Toolbar.OnMenuItemClickListene
 //                    }
 //                });
 //                dialog.show();
-                break;
+//                break;
 
             case R.id.menu_tb_user_item2:
                 Intent update_int = new Intent(this, Update_Act.class);

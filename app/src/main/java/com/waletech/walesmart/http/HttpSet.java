@@ -11,10 +11,9 @@ import com.waletech.walesmart.sharedinfo.SharedAction;
 public final class HttpSet {
     // 183.62.156.108:427
     // 192.168.137.1:8080
-//    192.168.2.211:8080
-    public static final String NORMAL_IP = "119.29.154.234:8080";
-    //    public static final String DEDICATED_IP = "192.168.137.1:8080";
-    public static final String DEDICATED_IP = "192.168.2.211:8080";
+    // 192.168.2.211:8080
+    public static final String NORMAL_IP = "119.29.154.234:80";
+    public static final String DEDICATED_IP = "10.10.18.35:8080";
 
     private static String BASE_SERVICE = "/ClientBaseService/";
 
@@ -168,6 +167,7 @@ public final class HttpSet {
 
     // Cabinet Set
     public final static String KEY_SMARK_ID = "smark_id";
+    public final static String KEY_SMARK_NUM = "smark_num";
 
     // Push Set
     public final static String KEY_CLIENT_ID = "client_id";

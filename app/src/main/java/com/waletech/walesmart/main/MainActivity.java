@@ -318,8 +318,8 @@ public class MainActivity extends Base_Act {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK) {
             if (requestCode == UnlockAction.REQUEST_MAIN) {
-                String smark_id = data.getStringExtra("scan_result");
-                unlockAction.unlock(smark_id);
+                String smark_num = data.getStringExtra("scan_result");
+                unlockAction.unlock(smark_num);
             }
         }
     }

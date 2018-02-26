@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_general" />
+
+    <TextView
+        android:id="@+id/exp_shop_tv"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorAssist"
+        android:gravity="center"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/exp_area_tv"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="3A"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_normal_size"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/exp_shop_ark_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/fragment_shop_exp_area_layout" />
+
+    </RelativeLayout>
+
+</LinearLayout>

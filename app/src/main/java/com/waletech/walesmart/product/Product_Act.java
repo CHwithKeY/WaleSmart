@@ -273,8 +273,8 @@ public class Product_Act extends Base_Act implements SwipeRefreshLayout.OnRefres
 
         if (resultCode == RESULT_OK) {
             if (requestCode == UnlockAction.REQUEST_MAIN) {
-                String smark_id = data.getStringExtra("scan_result");
-                productAction.unlock(smark_id);
+                String smark_num = data.getStringExtra("scan_result");
+                productAction.unlock(smark_num);
             }
         }
     }

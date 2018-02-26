@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="cab_1A11" type="id">1A11</item>
+    <item name="cab_1A12" type="id">1A12</item>
+    <item name="cab_1A13" type="id">1A13</item>
+    <item name="cab_1A14" type="id">1A14</item>
+    <item name="cab_1A15" type="id">1A15</item>
+    <item name="cab_1A16" type="id">1A16</item>
+
+    <item name="cab_1A21" type="id">1A21</item>
+    <item name="cab_1A22" type="id">1A22</item>
+    <item name="cab_1A23" type="id">1A23</item>
+    <item name="cab_1A24" type="id">1A24</item>
+    <item name="cab_1A25" type="id">1A25</item>
+    <item name="cab_1A26" type="id">1A26</item>
+
+    <item name="cab_1A31" type="id">1A31</item>
+    <item name="cab_1A32" type="id">1A32</item>
+    <item name="cab_1A33" type="id">1A33</item>
+    <item name="cab_1A34" type="id">1A34</item>
+    <item name="cab_1A35" type="id">1A35</item>
+    <item name="cab_1A36" type="id">1A36</item>
+
+    <item name="cab_1A41" type="id">1A41</item>
+    <item name="cab_1A42" type="id">1A42</item>
+    <item name="cab_1A43" type="id">1A43</item>
+    <item name="cab_1A44" type="id">1A44</item>
+    <item name="cab_1A45" type="id">1A45</item>
+    <item name="cab_1A46" type="id">1A46</item>
+
+    <item name="cab_1A51" type="id">1A51</item>
+    <item name="cab_1A52" type="id">1A52</item>
+    <item name="cab_1A53" type="id">1A53</item>
+    <item name="cab_1A54" type="id">1A54</item>
+    <item name="cab_1A55" type="id">1A55</item>
+    <item name="cab_1A56" type="id">1A56</item>
+
+    <item name="cab_1A61" type="id">1A61</item>
+    <item name="cab_1A62" type="id">1A62</item>
+    <item name="cab_1A63" type="id">1A63</item>
+    <item name="cab_1A64" type="id">1A64</item>
+    <item name="cab_1A65" type="id">1A65</item>
+    <item name="cab_1A66" type="id">1A66</item>
+
+    <item name="cab_2A11" type="id">2A11</item>
+    <item name="cab_2A12" type="id">2A12</item>
+    <item name="cab_2A13" type="id">2A13</item>
+    <item name="cab_2A14" type="id">2A14</item>
+    <item name="cab_2A15" type="id">2A15</item>
+    <item name="cab_2A16" type="id">2A16</item>
+
+    <item name="cab_3A11" type="id">3A11</item>
+    <item name="cab_3A12" type="id">3A12</item>
+    <item name="cab_3A13" type="id">3A13</item>
+    <item name="cab_3A14" type="id">3A14</item>
+    <item name="cab_3A15" type="id">3A15</item>
+    <item name="cab_3A16" type="id">3A16</item>
+
+    <item name="cab_3A21" type="id">3A21</item>
+    <item name="cab_3A22" type="id">3A22</item>
+    <item name="cab_3A23" type="id">3A23</item>
+    <item name="cab_3A24" type="id">3A24</item>
+    <item name="cab_3A25" type="id">3A25</item>
+    <item name="cab_3A26" type="id">3A26</item>
+
+    <item name="cab_3A31" type="id">3A31</item>
+    <item name="cab_3A32" type="id">3A32</item>
+    <item name="cab_3A33" type="id">3A33</item>
+    <item name="cab_3A34" type="id">3A34</item>
+    <item name="cab_3A35" type="id">3A35</item>
+    <item name="cab_3A36" type="id">3A36</item>
+
+    <item name="cab_3A41" type="id">3A41</item>
+    <item name="cab_3A42" type="id">3A42</item>
+    <item name="cab_3A43" type="id">3A43</item>
+    <item name="cab_3A44" type="id">3A44</item>
+    <item name="cab_3A45" type="id">3A45</item>
+    <item name="cab_3A46" type="id">3A46</item>
+
+    <item name="cab_3A51" type="id">3A51</item>
+    <item name="cab_3A52" type="id">3A52</item>
+    <item name="cab_3A53" type="id">3A53</item>
+    <item name="cab_3A54" type="id">3A54</item>
+    <item name="cab_3A55" type="id">3A55</item>
+    <item name="cab_3A56" type="id">3A56</item>
+
+    <item name="cab_4A11" type="id">4A11</item>
+    <item name="cab_4A12" type="id">4A12</item>
+    <item name="cab_4A13" type="id">4A13</item>
+    <item name="cab_4A14" type="id">4A14</item>
+    <item name="cab_4A15" type="id">4A15</item>
+    <item name="cab_4A16" type="id">4A16</item>
+
+    <item name="cab_5A11" type="id">5A11</item>
+    <item name="cab_5A12" type="id">5A12</item>
+    <item name="cab_5A13" type="id">5A13</item>
+    <item name="cab_5A14" type="id">5A14</item>
+    <item name="cab_5A15" type="id">5A15</item>
+    <item name="cab_5A16" type="id">5A16</item>
+
+    <item name="cab_6A11" type="id">6A11</item>
+    <item name="cab_6A12" type="id">6A12</item>
+    <item name="cab_6A13" type="id">6A13</item>
+    <item name="cab_6A14" type="id">6A14</item>
+    <item name="cab_6A15" type="id">6A15</item>
+    <item name="cab_6A16" type="id">6A16</item>
+
+</resources>
